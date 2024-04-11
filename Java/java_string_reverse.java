@@ -15,5 +15,6 @@ public class java_string_reverse {
 
     else
       System.out.println("No");
+    sc.close();
   }
 }
