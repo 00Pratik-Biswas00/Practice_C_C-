@@ -1,23 +1,4 @@
 
-/*
-Convert Infix to Prefix Expression
-Objective: Given an Infix expression, write an algorithm to convert it into Prefix expression.
-Algo rules:
-=> Reverse the given Infix expression
-=> If the character is operand, add to result.
-=> If character is operator
-    -> if stack is empty, push into stack
-    -> else if stack is not empty
-        - if the operator precedence is > top operator, push the 
-          character to the operator stack
-        - else "pop out an operator from the stack and add it to     result until stack is empty or top elements precedence is >, then push the operator"
-=> If character is ')', then push
-=> If the character is '(', then pop until ')' and add them to output and pop '('
-=> once the expression is ended pop all the operators from stack and append to result
-*/
-
-// Ex: input: (a-b/c)*(a/k-l)   output: *-a/bc-/akl
-
 import java.util.Scanner;
 import java.util.Stack;
 
